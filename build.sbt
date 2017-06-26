@@ -49,8 +49,9 @@ lazy val root = (project in file("."))
       "org.clapper" %% "grizzled-slf4j" % "1.3.1",
       "com.sparkjava" % "spark-core" % "2.6.0" ,
       "org.neo4j.driver" % "neo4j-java-driver" % "1.2.1",
-      "ch.qos.logback" % "logback-classic" % "1.0.13"
-
+      "ch.qos.logback" % "logback-classic" % "1.0.13",
+      "com.typesafe" % "config" % "1.3.1",
+      "org.json4s" %% "json4s-jackson" % "3.5.2"
     )
 
 

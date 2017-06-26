@@ -2,6 +2,8 @@ web:
   build: .
   ports:
     - "4567:4567"
+  environment:
+    ENV: compose
   links:
     - neo4j
 
@@ -9,3 +11,6 @@ neo4j:
   image: neo4j:3.2.1
   ports:
     - "7687:7687"
+    - "7474:7474"
+  environment:
+    NEO4J_AUTH: neo4j/p4ssw0rd
