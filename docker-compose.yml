@@ -1,0 +1,11 @@
+web:
+  build: .
+  ports:
+    - "4567:4567"
+  links:
+    - neo4j
+
+neo4j:
+  image: neo4j:3.2.1
+  ports:
+    - "7687:7687"
